@@ -1,18 +1,16 @@
 # JOM. Generics. Collections. Annotations
-## Task 2
+## Task 3
 
-Create the **commonStudents()** method of the **MyUtils** class to return a **HashSet** of common elements of two **student lists**.
+Create a **listMapCompare()** method of the **MyUtils** class to compare the contents of a **list of strings** and the **values of a map**.
 
-For example, for a given
+For example, for a given list
 ```
-list1 [Students [id=1, name=Ivan], Students [id=2, name=Petro], Students [id=3, name=Stepan]]
+[aa, bb, aa, cc]
 ```
-and
+and map
 ```
-list2 [Students [id=1, name=Ivan], Students [id=3, name=Stepan], Students [id=4, name=Andriy]]
+{1=cc, 2=bb, 3=cc, 4=aa, 5=cc}
 ```
-you should get
-```
-[Students [id=3, name=Stepan], Students [id=1, name=Ivan]]
-```
+you should get **true**.
+
 > For correct passing of all tests don't use **print** and **println** methods in your code.
