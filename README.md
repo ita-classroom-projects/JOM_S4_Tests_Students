@@ -1,16 +1,20 @@
 # JOM. Generics. Collections. Annotations
-## Task 5
+## Task 6
 
-Suppose we have the next generic class:
+Suppose we have the next class hierarchy:
 
-![alt text](img/sprint4task51.png)
+![alt text](img/sprint4task61.png)
 
-In the class **ArrayUtil** write **static** method named "**averageValue(...)**" that takes an object of **Array** type as input, and returns the average value its elements.
+Create classes with name **PersonComparator**, **EmployeeComparator**, **DeveloperComparator** that implenent the **Comparator<Type>** generic interface.
 
-The given method should returns value of **double** type and take any array, whose elements extends **Number** type.
+In the **Utility** class create **public static** method named **sortPeople(...)** that takes an **array** of **Person** type and **derivative** from it types, and **comparator** as input, and returns the value of **void** type.
 
-Examples of usage:
+Also, as **second argument** the method **sortPeople(...)** can takes **generic comparator** for elements of **Object** type.
 
-![alt text](img/sprint4task52.png)
+The **sortPeople(...)** method should sorted records by **ascending**. At first by **name**, then by **age**, then by **salary**, and then by **Level (JUNIOR < MIDDLE < SENIOR)**
+
+As implementation of **sortPeople(...)** method use the next code:
+
+![alt text](img/sprint4task62.png)
 
 > For correct passing of all tests don't use **print** and **println** methods in your code.
