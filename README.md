@@ -1,20 +1,24 @@
 # JOM. Generics. Collections. Annotations
-## Task 6
+## Task 7
 
-Suppose we have the next class hierarchy:
+Create marker-annotation **CamelCase** which will check whether method named according to code conventions. Create class **CheckCamelCase** for checking if all the annotated methods of some class satisfy naming pattern. This class contains constant 'CAMELCASE_PATTERN' that introduces regex for checking method name. Also this class contains method **checkAndPrint(Class clazz)** which returns true if all annotated methods of class satisfy 'CAMELCASE_PATTERN' and prints to standard output information about all incorrect method names by template: **method <className>.<methodName> doesn't satisfy camelCase naming convention**.
 
-![alt text](img/sprint4task61.png)
+For example
+```
+For class
+public class Class1{
+@CamelCase
+public void correct(){}
+@CamelCase
+public void InCorrect(){}
+public void JustMethod(){}
+}
+```
+call CheckCamelCase.checkAndPrint(Class1.class)
 
-Create classes with name **PersonComparator**, **EmployeeComparator**, **DeveloperComparator** that implenent the **Comparator<Type>** generic interface.
-
-In the **Utility** class create **public static** method named **sortPeople(...)** that takes an **array** of **Person** type and **derivative** from it types, and **comparator** as input, and returns the value of **void** type.
-
-Also, as **second argument** the method **sortPeople(...)** can takes **generic comparator** for elements of **Object** type.
-
-The **sortPeople(...)** method should sorted records by **ascending**. At first by **name**, then by **age**, then by **salary**, and then by **Level (JUNIOR < MIDDLE < SENIOR)**
-
-As implementation of **sortPeople(...)** method use the next code:
-
-![alt text](img/sprint4task62.png)
+prints to console
+```
+method Class1.InCorrect doesn't satisfy camelCase naming convention
+```
 
 > For correct passing of all tests don't use **print** and **println** methods in your code.
