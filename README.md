@@ -1,16 +1,10 @@
 # JOM. Generics. Collections. Annotations
-## Task 3
+## Task 4
 
-Create a **listMapCompare()** method of the **MyUtils** class to compare the contents of a **list of strings** and the **values of a map**.
+In the class **ArrayUtil** write a **public static** generic method named "**setAndReturn(...)**" to modify and return the element in an array from the given position.
 
-For example, for a given list
-```
-[aa, bb, aa, cc]
-```
-and map
-```
-{1=cc, 2=bb, 3=cc, 4=aa, 5=cc}
-```
-you should get **true**.
+Examples of usage:
+
+![alt text](img/sprint4task4.png)
 
 > For correct passing of all tests don't use **print** and **println** methods in your code.
