@@ -1,35 +1,14 @@
-# Welcome to Java Marathon
-## JOM. Generics. Collections. Annotations
+# JOM. Generics. Collections. Annotations
+## Task 1
 
-You can start by cloning the repository to your computer using the following command:
-```
-git clone <url>
-```
-You can copy the Url here
+Create a **createNotebook()** method of the **MyUtils** class to create a new map with **name** as key and **phone** list as value.  The method receives a map with **phone** as key and **name** as value.
 
-![alt text](img/sprint4clone.png)
-
-This sprint contains a few tasks. Unit tests for the tasks are in the separate branches **task1**, **task2**, **task3**.... 
-
-You can switch between branches using a command
+For example, for a given map
 ```
- git checkout <branch name>
+{0967654321=Petro, 0677654321=Petro, 0501234567=Ivan, 0970011223=Stepan, 0631234567=Ivan}
 ```
- e.g.
+you should get
 ```
- git checkout task1
- ```
- > Don't forget to commit your code before switching to another branch
- 
- In the **main** folder first you need to complete your code with the solution of the taks
- 
-After this uncomment all tests in folder **test** and run the code
+{Ivan=[0501234567, 0631234567], Petro=[0967654321, 0677654321], Stepan=[0970011223]}
 ```
-mvn test
-```
-or (if you haven't installed Maven on your PC)
-```
-./mvnw test
-```
-or just use command `Run` from your IDE
- 
+> For correct passing of all tests don't use **print** and **println** methods in your code.
