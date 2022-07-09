@@ -1,14 +1,18 @@
 # JOM. Generics. Collections. Annotations
-## Task 1
+## Task 2
 
-Create a **createNotebook()** method of the **MyUtils** class to create a new map with **name** as key and **phone** list as value.  The method receives a map with **phone** as key and **name** as value.
+Create the **commonStudents()** method of the **MyUtils** class to return a **HashSet** of common elements of two **student lists**.
 
-For example, for a given map
+For example, for a given
 ```
-{0967654321=Petro, 0677654321=Petro, 0501234567=Ivan, 0970011223=Stepan, 0631234567=Ivan}
+list1 [Students [id=1, name=Ivan], Students [id=2, name=Petro], Students [id=3, name=Stepan]]
+```
+and
+```
+list2 [Students [id=1, name=Ivan], Students [id=3, name=Stepan], Students [id=4, name=Andriy]]
 ```
 you should get
 ```
-{Ivan=[0501234567, 0631234567], Petro=[0967654321, 0677654321], Stepan=[0970011223]}
+[Students [id=3, name=Stepan], Students [id=1, name=Ivan]]
 ```
 > For correct passing of all tests don't use **print** and **println** methods in your code.
