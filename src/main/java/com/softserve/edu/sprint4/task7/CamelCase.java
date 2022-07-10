@@ -8,7 +8,6 @@ import java.lang.annotation.Target;
 
 // declare annotation @CamelCase
 
-@Target(ElementType.METHOD)
-@Retention(RetentionPolicy.RUNTIME)
+// TODO
 public @interface CamelCase {
 }
