@@ -7,24 +7,12 @@ public class AverageValueTools {
 
     public static boolean hasTypeDeclaredMethod(String typeName, String methodName, String[] parameterTypes) {
         try {
-            boolean result = true;
-            Class<?> clazz = Class.forName(typeName);
-            Method[] methods = clazz.getDeclaredMethods();
-            for (Method method : methods) {
-                Class<?>[] types = method.getParameterTypes();
-                if (!methodName.equals(method.getName())) {
-                    result = false;
-                }
-                for (int i = 0; i < types.length; i++) {
-                    if (!parameterTypes[i].equals(types[i].toString())) {
-                        //System.out.println(parameterTypes[i]);
-                        //System.out.println(types[i].toString());
-                        result = false;
-                        break;
-                    }
-                }
-            }
-            return result;
+            return Arrays.stream(Class.forName(typeName).getDeclaredMethods())
+                    .anyMatch(method -> methodName.equals(method.getName()) &&
+                            Arrays.equals(
+                                    parameterTypes,
+                                    Arrays.stream(method.getParameterTypes())
+                                            .map(String::valueOf).toArray()));
         } catch (ClassNotFoundException e) {
             return false;
         }
