@@ -1,11 +1,11 @@
-# Welcome to Java Marathon
-## JOM. Generics. Collections. Annotations
+# Welcome to PRACTICAL JAVA 
+## Generics. Collections. Annotations
 
 You can start by cloning the repository to your computer using the following command:
 ```
 git clone <url>
 ```
-You can copy the Url here
+You can copy the url here:
 
 ![alt text](img/sprint4clone.png)
 
