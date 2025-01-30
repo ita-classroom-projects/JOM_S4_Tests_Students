@@ -59,7 +59,7 @@ public class CheckAndPrintTools {
                 System.out.println(true);
                 return true;
             } else {
-                System.out.println("excpected constant CAMELCASE_PATTERN");
+                System.out.println("expected constant CAMELCASE_PATTERN");
                 return false;
             }
 

@@ -28,7 +28,6 @@ class Class1 {
 	public void InCorrect() {
 	}
 
-	@CamelCase
 	public void JustMethod() {
 	}
 }
