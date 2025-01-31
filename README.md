@@ -1,7 +1,7 @@
 # JOM. Generics. Collections. Annotations
 ## Task 7
 
-Create marker-annotation **CamelCase** which will check whether method is named according to code conventions. Create class **CheckCamelCase** for checking if all the annotated methods of some class satisfy the naming pattern. This class contains constant 'CAMELCASE_PATTERN' that introduces regex for checking method names. Also, this class contains method **checkAndPrint(Class clazz)** which returns true if all annotated methods of class satisfy 'CAMELCASE_PATTERN' and prints to standard output information about all incorrect method names by template: **method <className>.<methodName> doesn't satisfy camelCase naming convention**.
+Create a marker annotation **CamelCase** to check whether a method is named according to the code conventions. Create a class **CheckCamelCase** to verify if all the annotated methods of a given class satisfy the naming pattern. This class contains constant 'CAMELCASE_PATTERN' that defines a regex for checking method names. It also includes the method **checkAndPrint(Class clazz)** which returns true if all annotated methods in the given class conform to 'CAMELCASE_PATTERN'. Additionally, it prints to the standard output information about any incorrectly named methods using the following format: **method <className>.<methodName> doesn't satisfy camelCase naming convention**.
 
 For example, for class
 ```java
